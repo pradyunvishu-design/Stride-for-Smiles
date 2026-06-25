@@ -144,7 +144,7 @@ export function HomePage() {
 
       <section className="why-section">
         <div className="why-photo-stack">
-          <img src="/volunteer-hero-photo.png" alt="Volunteers preparing water bottles and dental hygiene supplies" />
+          <img src="/why-stride-walk-photo.png" alt="Volunteers and families walking together at a sunny community stride event" />
           <div className="route-line" aria-hidden="true" />
         </div>
         <div>
