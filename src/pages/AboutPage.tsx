@@ -14,7 +14,16 @@ export function AboutPage() {
             deliver practical support through school and community partnerships.
           </p>
         </div>
-        <img src="/volunteer-hero-photo.png" alt="Stride for Smiles volunteers preparing a community event table" />
+        <div className="about-smile-animation" aria-hidden="true">
+          <div className="about-orbit" />
+          <div className="about-smile-face" />
+          <span className="about-step step-one" />
+          <span className="about-step step-two" />
+          <span className="about-step step-three" />
+          <span className="about-chip chip-health">Health</span>
+          <span className="about-chip chip-service">Service</span>
+          <span className="about-chip chip-leadership">Youth-led</span>
+        </div>
       </div>
 
       <div className="story-grid">
