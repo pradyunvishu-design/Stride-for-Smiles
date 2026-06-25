@@ -102,7 +102,7 @@ export function DonatePage() {
             </a>
           </div>
         </div>
-        <img src="/volunteer-hero-photo.png" alt="Volunteers preparing water bottles and dental hygiene supplies" />
+        <img src="/donate-impact-photo.png" alt="A donor handing care supplies to youth volunteers at a sunny community event" />
       </div>
 
       <div className="donation-layout">
