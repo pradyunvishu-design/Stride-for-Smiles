@@ -239,7 +239,7 @@ export function DonatePage() {
         </form>
       </div>
 
-      <div className="impact-callout">
+      <div className="impact-callout donation-note">
         <HandHeart size={28} />
         <div>
           <h2>Transparency note</h2>
