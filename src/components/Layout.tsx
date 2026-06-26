@@ -78,7 +78,7 @@ export function Layout() {
               </span>
               <span>
                 <strong>Stride for Smiles</strong>
-                <small>Fitness, service, and brighter days.</small>
+                <small>Fitness, service, and brighter futures.</small>
               </span>
             </Link>
           </div>
@@ -91,13 +91,14 @@ export function Layout() {
           </div>
 
           <div className="footer-links">
-            <Link to="/privacy">Privacy</Link>
-            <Link to="/terms">Terms</Link>
-            <Link to="/liability">Liability</Link>
+            <Link to="/privacy">Privacy policy</Link>
+            <Link to="/terms">Terms of service</Link>
+            <Link to="/liability">Liability disclaimer</Link>
             <Link to="/photo-release">Photo release</Link>
           </div>
 
           <div className="footer-contact">
+            <p className="footer-status">Nonprofit status info: pending confirmation.</p>
             <a href={`mailto:${contactInfo.email}`}>
               <Mail size={16} />
               {contactInfo.email}

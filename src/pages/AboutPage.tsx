@@ -40,7 +40,7 @@ export function AboutPage() {
           <h2>Vision for Katy</h2>
           <p>
             A community where weekend strides, campus drives, and volunteer teams become a
-            reliable rhythm of wellness and local care.
+            reliable rhythm of fitness, service, and local care.
           </p>
         </article>
       </div>

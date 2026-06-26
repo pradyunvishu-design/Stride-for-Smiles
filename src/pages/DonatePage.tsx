@@ -78,8 +78,8 @@ export function DonatePage() {
             <span>showed up.</span>
           </h1>
           <p>
-            Your support helps turn a Katy walk/run into water stations, smile supplies,
-            outreach supplies, and student-led service. Choose an amount, see what it
+            Your support helps turn a Katy walk/run into water stations,
+            local outreach, and student-led service. Choose an amount, see what it
             unlocks, and help the next event feel possible.
           </p>
           <div className="donate-trust-row">
@@ -102,7 +102,7 @@ export function DonatePage() {
             </a>
           </div>
         </div>
-        <img src="/donate-impact-photo.png" alt="A donor handing care supplies to youth volunteers at a sunny community event" />
+        <img src="/why-stride-walk-photo.png" alt="Youth and family volunteers walking together at a sunny community stride event" />
       </div>
 
       <div className="donation-layout">
@@ -186,7 +186,7 @@ export function DonatePage() {
             <Building2 size={24} />
             <div>
               <h2>Corporate sponsorship</h2>
-              <p>Sponsor a run/walk, water station, supply drive, or student team.</p>
+              <p>Sponsor a run/walk, water station, community event, or student team.</p>
             </div>
           </div>
 
@@ -220,7 +220,7 @@ export function DonatePage() {
             >
               <option>Sponsor a run/walk</option>
               <option>Water station sponsor</option>
-              <option>Smile supply sponsor</option>
+              <option>Community event sponsor</option>
               <option>School ambassador sponsor</option>
             </select>
           </label>

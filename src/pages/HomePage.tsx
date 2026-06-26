@@ -1,12 +1,9 @@
-import { ArrowRight, CheckCircle2, Footprints, Heart, ShieldCheck, Sparkles } from 'lucide-react'
+import { ArrowRight, Footprints, Heart, ShieldCheck } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { CountUp } from '../components/CountUp'
-import { EventCard } from '../components/EventCard'
-import { donationTiers, events, impactStats, testimonials } from '../data'
+import { donationTiers, impactStats, testimonials } from '../data'
 
 export function HomePage() {
-  const upcomingEvents = [...events].sort((a, b) => a.dateISO.localeCompare(b.dateISO)).slice(0, 3)
-
   return (
     <>
       <section className="hero-section">
@@ -17,17 +14,18 @@ export function HomePage() {
         <div className="hero-content">
           <p className="eyebrow">Katy youth, families, and neighbors in motion</p>
           <h1>
-            <span className="hero-headline-main">Run the miles.</span>
-            <span className="hero-headline-accent">Fund the smiles.</span>
+            <span className="hero-headline-main">Moving together</span>
+            <span className="hero-headline-main">for stronger communities,</span>
+            <span className="hero-headline-accent">healthier lives, and brighter futures.</span>
           </h1>
           <p className="hero-copy">
-            A youth-powered Katy nonprofit turning walk/run events into dental care supplies,
-            volunteer hours, and real community support. Every signup moves the mission.
-            Every gift puts supplies in someone's hands.
+            A youth-powered Katy nonprofit turning walk/run events into fitness,
+            community service, and real local impact. Youth and families moving
+            together for stronger communities.
           </p>
           <div className="button-row hero-actions">
             <Link className="btn btn-primary btn-large" to="/donate">
-              Donate to the next supply drive
+              Donate to the next stride
               <ArrowRight size={18} />
             </Link>
             <Link className="btn btn-primary" to="/volunteer">
@@ -41,21 +39,13 @@ export function HomePage() {
           <div className="trust-row" aria-label="Trust indicators">
             <span>
               <ShieldCheck size={17} />
-              Youth-led
-            </span>
-            <span>
-              <CheckCircle2 size={17} />
-              Service-hour friendly
-            </span>
-            <span>
-              <Heart size={17} />
-              Katy focused
+              Youth-led • Service-hour friendly • Katy focused
             </span>
           </div>
         </div>
 
         <figure className="hero-photo-card">
-          <img src="/volunteer-hero-photo.png" alt="Volunteers preparing water bottles and dental hygiene supplies at a sunny community event" />
+          <img src="/why-stride-walk-photo.png" alt="Youth and family volunteers walking together at a sunny community stride event" />
           <figcaption>
             <strong>312+</strong>
             volunteers already moving the mission forward
@@ -68,11 +58,7 @@ export function HomePage() {
       </section>
 
       <section className="proof-strip">
-        <span>Walk/run events</span>
-        <span>Smile supply drives</span>
-        <span>School ambassadors</span>
-        <span>Service hours</span>
-        <span>Family-friendly volunteering</span>
+        <span>Walk/run events • School ambassadors • Service hours • Family-friendly volunteering</span>
       </section>
 
       <section className="mission-panel">
@@ -82,8 +68,8 @@ export function HomePage() {
         </div>
         <p>
           Stride for Smiles gives Katy students and families a clear way to show up:
-          move together, serve together, and fund practical supplies for neighbors.
-          The site is built to make that next action obvious, whether someone has ten
+          move together, serve together, and create real community impact.
+          The site is built to make the next action obvious, whether someone has ten
           dollars, two hours, or a whole school club ready to help.
         </p>
       </section>
@@ -117,10 +103,13 @@ export function HomePage() {
             <ArrowRight size={17} />
           </Link>
         </div>
-        <div className="event-grid">
-          {upcomingEvents.map((event) => (
-            <EventCard key={event.id} event={event} compact />
-          ))}
+        <div className="coming-soon-card">
+          <h3>Events coming soon</h3>
+          <p>Check back or sign up to get notified!</p>
+          <Link className="btn btn-primary" to="/volunteer">
+            Get notified
+            <ArrowRight size={17} />
+          </Link>
         </div>
       </section>
 
@@ -148,21 +137,17 @@ export function HomePage() {
         </div>
         <div>
           <p className="eyebrow">Why we stride</p>
-          <h2>Health, wellness, service, and community outreach belong on the same path.</h2>
+          <h2>Health, service, youth leadership, and community engagement belong on the same path.</h2>
           <p>
             A stride is more than a route. It is a reason for young leaders to organize,
-            families to move together, and local partners to turn small supplies into real
-            care. The playful energy is intentional: joy makes service easier to start and
+            families to move together, and local partners to create real community impact.
+            The playful energy is intentional: joy makes service easier to start and
             easier to return to.
           </p>
           <div className="feature-list">
             <span>
               <Heart size={18} />
               Youth-friendly service hours
-            </span>
-            <span>
-              <Sparkles size={18} />
-              Smile supply outreach
             </span>
             <span>
               <Footprints size={18} />

@@ -47,16 +47,16 @@ export const events: EventItem[] = [
     location: 'Mary Jo Peckham Park, Katy',
     difficulty: 'Beginner and family-friendly',
     description:
-      'A cheerful morning stride around the park supporting dental hygiene supplies and wellness outreach for Katy families.',
-    participantTasks: ['Walk or run the marked route', 'Cheer on youth teams', 'Help prepare post-race smile supplies'],
+      'A cheerful morning stride around the park supporting fitness, service, and local community impact for Katy families.',
+    participantTasks: ['Walk or run the marked route', 'Cheer on youth teams', 'Help welcome participants'],
     bring: ['Water bottle', 'Comfortable shoes', 'Sun protection'],
     volunteerRoles: ['Registration/check-in team', 'Route marshals', 'Water station support'],
     capacity: 140,
     ctaLabel: 'Register for this stride',
   },
   {
-    id: 'school-supply-stride',
-    name: 'School Supply Sorting Sprint',
+    id: 'school-service-stride',
+    name: 'School Service Sprint',
     eventType: 'Volunteer',
     categories: ['volunteer', 'school'],
     dateISO: '2026-08-02T13:00:00',
@@ -65,8 +65,8 @@ export const events: EventItem[] = [
     location: 'Cinco Ranch Community Room',
     difficulty: 'Service hours eligible',
     description:
-      'Youth volunteers organize supplies, hygiene items, and encouragement notes for school partner distribution.',
-    participantTasks: ['Sort supplies by grade group', 'Create encouragement cards', 'Build delivery boxes'],
+      'Youth volunteers organize outreach tasks, welcome stations, and school partner support for a service day.',
+    participantTasks: ['Organize volunteer stations', 'Welcome participants', 'Stage materials for partner pickup'],
     bring: ['Service hour form', 'Closed-toe shoes', 'Reusable water bottle'],
     volunteerRoles: ['Event setup crew', 'School ambassadors', 'Outreach/recruitment team'],
     capacity: 55,
@@ -83,16 +83,16 @@ export const events: EventItem[] = [
     location: 'Katy Boardwalk District',
     difficulty: 'All ages',
     description:
-      'A relaxed evening mile with smile stations, stretching, and a youth-led mini wellness challenge.',
-    participantTasks: ['Complete one community mile', 'Visit wellness stations', 'Invite a friend or family member'],
+      'A relaxed evening mile with community stations, stretching, and a youth-led fitness challenge.',
+    participantTasks: ['Complete one community mile', 'Visit activity stations', 'Invite a friend or family member'],
     bring: ['Comfortable clothing', 'Phone for QR check-in', 'Positive energy'],
     volunteerRoles: ['Social media/content team', 'Route marshals', 'Water station support'],
     capacity: 120,
     ctaLabel: 'Join the mile',
   },
   {
-    id: 'community-smile-supply-build',
-    name: 'Community Smile Supply Build',
+    id: 'community-impact-day',
+    name: 'Community Impact Day',
     eventType: 'Volunteer',
     categories: ['volunteer', 'community'],
     dateISO: '2026-09-05T10:00:00',
@@ -101,12 +101,12 @@ export const events: EventItem[] = [
     location: 'Katy Vibes Community Hall',
     difficulty: 'Great for first-time volunteers',
     description:
-      'A hands-on supply-building event that turns donated items into ready-to-deliver smile care bundles.',
-    participantTasks: ['Assemble care bundles', 'Write care cards', 'Stage boxes for partner pickup'],
-    bring: ['Comfortable clothes', 'Service hour log', 'Optional toothbrush donations'],
+      'A hands-on service event that turns volunteer energy into visible support for local partners.',
+    participantTasks: ['Set up activity stations', 'Welcome neighbors', 'Stage materials for partner pickup'],
+    bring: ['Comfortable clothes', 'Service hour log', 'Reusable water bottle'],
     volunteerRoles: ['Event setup crew', 'Fundraising support', 'Registration/check-in team'],
     capacity: 75,
-    ctaLabel: 'Build supplies with us',
+    ctaLabel: 'Serve with us',
   },
   {
     id: 'student-ambassador-meetup',
@@ -131,7 +131,7 @@ export const events: EventItem[] = [
 export const impactStats: ImpactStat[] = [
   { label: 'Volunteers engaged', value: 312, suffix: '+', note: 'students, parents, and neighbors' },
   { label: 'Miles walked/run', value: 1240, suffix: '+', note: 'movement turned into momentum' },
-  { label: 'Funds raised', value: 18650, prefix: '$', note: 'for supplies and local outreach' },
+  { label: 'Funds raised', value: 18650, prefix: '$', note: 'for community impact and local outreach' },
   { label: 'Communities served', value: 14, suffix: '+', note: 'Katy-area schools and partners' },
 ]
 
@@ -147,10 +147,10 @@ export const volunteerRoles = [
 ]
 
 export const donationTiers: DonationTier[] = [
-  { amount: 10, label: 'Supplies', impact: 'Funds toothbrushes, toothpaste, and care cards.' },
-  { amount: 25, label: 'Event support', impact: 'Helps cover water, signage, and check-in materials.' },
-  { amount: 50, label: 'Community impact', impact: 'Supports smile supplies and outreach for local families.' },
-  { amount: 100, label: 'Sponsor level', impact: 'Backs a youth-led stride, supply drive, or school event.' },
+  { amount: 10, label: 'Community support', impact: 'General community support.' },
+  { amount: 25, label: 'Event support', impact: 'Helps cover event costs like water, signage, and materials.' },
+  { amount: 50, label: 'Community impact', impact: 'Supports community impact and local outreach.' },
+  { amount: 100, label: 'Sponsor level', impact: 'Backs a youth-led stride, event, or school partnership.' },
 ]
 
 export const testimonials: Testimonial[] = [
@@ -161,7 +161,7 @@ export const testimonials: Testimonial[] = [
     accent: 'sun',
   },
   {
-    quote: 'The team brings families together around wellness and kindness in a way Katy needs.',
+    quote: 'The team brings families together around fitness, service, and community in a way Katy needs.',
     name: 'Coach Daniels',
     role: 'Community partner',
     accent: 'grass',
@@ -176,10 +176,10 @@ export const testimonials: Testimonial[] = [
 
 export const galleryItems: GalleryItem[] = [
   {
-    title: 'Start-line smiles',
+    title: 'Start-line energy',
     category: 'Featured photo',
     description: 'A bright preview of the volunteer energy Stride for Smiles is building around Katy.',
-    image: '/volunteer-hero-photo.png',
+    image: '/why-stride-walk-photo.png',
     tone: 'photo',
   },
   {
@@ -197,10 +197,10 @@ export const galleryItems: GalleryItem[] = [
     tone: 'grass',
   },
   {
-    title: 'Community care table',
+    title: 'Community impact table',
     category: 'Outreach',
-    description: 'Care supplies, encouragement cards, and local partners turn donations into impact.',
-    metric: '500 supplies goal',
+    description: 'Volunteer energy, school partners, and local support turn donations into impact.',
+    metric: '500 actions goal',
     tone: 'tangerine',
   },
 ]
@@ -289,7 +289,7 @@ export const legalPages: Record<'privacy' | 'terms' | 'liability' | 'photoReleas
     sections: [
       {
         heading: 'Media use',
-        body: 'Photos or videos may be used on the website, social media, newsletters, flyers, and sponsor updates to highlight service and wellness programs.',
+        body: 'Photos or videos may be used on the website, social media, newsletters, flyers, and sponsor updates to highlight service and fitness programs.',
       },
       {
         heading: 'Opt-out',

@@ -312,10 +312,10 @@ main {
 }
 
 .hero-content h1 {
-  max-width: 760px;
+  max-width: 860px;
   margin-top: 0.75rem;
-  font-size: clamp(3.8rem, 7vw, 5.85rem);
-  line-height: 0.98;
+  font-size: clamp(3.25rem, 5.8vw, 5.25rem);
+  line-height: 1;
 }
 
 .hero-content h1 .hero-headline-main {
@@ -326,7 +326,7 @@ main {
   display: block;
   margin-top: 0.2rem;
   color: transparent;
-  font-size: clamp(2.8rem, 5.6vw, 4.8rem);
+  font-size: clamp(2.45rem, 4.9vw, 4.25rem);
   line-height: 1.02;
   -webkit-text-stroke: 2px var(--ink);
   text-shadow: 4px 4px 0 var(--sun);
@@ -532,6 +532,28 @@ main {
 
 .event-card h3 {
   font-size: 1.55rem;
+}
+
+.coming-soon-card {
+  display: grid;
+  justify-items: start;
+  gap: 0.75rem;
+  border: 1px solid rgba(24, 29, 39, 0.12);
+  border-radius: var(--radius-card);
+  background:
+    radial-gradient(circle at 90% 18%, rgba(255, 255, 255, 0.86) 0 12%, transparent 13%),
+    linear-gradient(135deg, rgba(128, 215, 255, 0.38), rgba(255, 216, 77, 0.7));
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+  box-shadow: var(--soft-shadow);
+}
+
+.coming-soon-card h3 {
+  font-size: clamp(2rem, 4vw, 3.1rem);
+}
+
+.coming-soon-card p {
+  color: #405061;
+  font-size: 1.08rem;
 }
 
 .card-kicker {
@@ -1343,6 +1365,12 @@ main {
   text-decoration: none;
 }
 
+.footer-status {
+  color: var(--stone);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
 .social-row {
   display: flex;
   gap: 0.7rem;
@@ -1464,16 +1492,17 @@ main {
 }
 
 .hero-content h1 {
-  max-width: 940px;
-  font-size: clamp(4.25rem, 8.6vw, 9rem);
-  line-height: 0.9;
+  max-width: 720px;
+  font-size: clamp(2.85rem, 4.6vw, 4.7rem);
+  line-height: 1.03;
+  text-wrap: balance;
 }
 
 .hero-content h1 .hero-headline-accent {
   margin-top: 0.35rem;
-  font-size: clamp(3.05rem, 6.4vw, 6.7rem);
-  line-height: 0.96;
-  text-shadow: 5px 5px 0 var(--sun);
+  font-size: clamp(2.1rem, 3.75vw, 3.55rem);
+  line-height: 1.02;
+  text-shadow: 4px 4px 0 var(--sun);
 }
 
 .hero-copy {
@@ -1509,6 +1538,7 @@ main {
 .donate-trust-row span {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.42rem;
   border: 1px solid rgba(24, 29, 39, 0.1);
   border-radius: var(--radius-pill);
@@ -1624,6 +1654,7 @@ main {
 
 .proof-strip span {
   position: relative;
+  overflow-wrap: anywhere;
   border-radius: var(--radius-pill);
   background: var(--pure-white);
   padding: 0.6rem 0.9rem;
@@ -2051,18 +2082,19 @@ main {
   }
 
   .hero-content h1 {
-    font-size: clamp(3rem, 15vw, 3.9rem);
-    line-height: 0.94;
+    font-size: clamp(2rem, 8.8vw, 2.55rem);
+    line-height: 1.06;
   }
 
   .hero-content h1 .hero-headline-accent {
-    font-size: clamp(2.25rem, 11.5vw, 3.05rem);
-    text-shadow: 3px 3px 0 var(--sun);
+    font-size: clamp(1.5rem, 7.2vw, 2rem);
+    -webkit-text-stroke: 1px var(--ink);
+    text-shadow: 2px 2px 0 var(--sun);
   }
 
   .hero-content h1 .hero-headline-main,
   .hero-content h1 .hero-headline-accent {
-    max-width: 7.8ch;
+    max-width: 100%;
   }
 
   .donate-hero h1 {
@@ -2201,11 +2233,15 @@ main {
   }
 
   .hero-content h1 {
-    font-size: clamp(2.7rem, 14vw, 3.45rem);
+    max-width: 100%;
+    font-size: clamp(1.95rem, 9vw, 2.35rem);
+    line-height: 1.06;
   }
 
   .hero-content h1 .hero-headline-accent {
-    font-size: clamp(2rem, 10.5vw, 2.6rem);
+    font-size: clamp(1.48rem, 7.2vw, 1.9rem);
+    -webkit-text-stroke: 1px var(--ink);
+    text-shadow: 2px 2px 0 var(--sun);
   }
 
   .page-hero h1,
