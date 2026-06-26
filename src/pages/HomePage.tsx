@@ -21,13 +21,13 @@ export function HomePage() {
             <span className="hero-headline-accent">Fund the smiles.</span>
           </h1>
           <p className="hero-copy">
-            A youth-powered Katy nonprofit turning walk/run events into dental care kits,
+            A youth-powered Katy nonprofit turning walk/run events into dental care supplies,
             volunteer hours, and real community support. Every signup moves the mission.
             Every gift puts supplies in someone's hands.
           </p>
           <div className="button-row hero-actions">
             <Link className="btn btn-primary btn-large" to="/donate">
-              Donate to the next kit build
+              Donate to the next supply drive
               <ArrowRight size={18} />
             </Link>
             <Link className="btn btn-primary" to="/volunteer">
@@ -55,7 +55,7 @@ export function HomePage() {
         </div>
 
         <figure className="hero-photo-card">
-          <img src="/volunteer-hero-photo.png" alt="Volunteers packing water bottles and dental hygiene kits at a sunny community event" />
+          <img src="/volunteer-hero-photo.png" alt="Volunteers preparing water bottles and dental hygiene supplies at a sunny community event" />
           <figcaption>
             <strong>312+</strong>
             volunteers already moving the mission forward
@@ -69,7 +69,7 @@ export function HomePage() {
 
       <section className="proof-strip">
         <span>Walk/run events</span>
-        <span>Smile kit builds</span>
+        <span>Smile supply drives</span>
         <span>School ambassadors</span>
         <span>Service hours</span>
         <span>Family-friendly volunteering</span>
@@ -145,7 +145,6 @@ export function HomePage() {
       <section className="why-section">
         <div className="why-photo-stack">
           <img src="/why-stride-walk-photo.png" alt="Volunteers and families walking together at a sunny community stride event" />
-          <div className="route-line" aria-hidden="true" />
         </div>
         <div>
           <p className="eyebrow">Why we stride</p>
@@ -163,7 +162,7 @@ export function HomePage() {
             </span>
             <span>
               <Sparkles size={18} />
-              Smile-kit outreach
+              Smile supply outreach
             </span>
             <span>
               <Footprints size={18} />

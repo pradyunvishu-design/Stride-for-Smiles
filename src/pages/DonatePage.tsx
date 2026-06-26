@@ -78,7 +78,7 @@ export function DonatePage() {
             <span>showed up.</span>
           </h1>
           <p>
-            Your support helps turn a Katy walk/run into water stations, smile kits,
+            Your support helps turn a Katy walk/run into water stations, smile supplies,
             outreach supplies, and student-led service. Choose an amount, see what it
             unlocks, and help the next event feel possible.
           </p>
@@ -186,7 +186,7 @@ export function DonatePage() {
             <Building2 size={24} />
             <div>
               <h2>Corporate sponsorship</h2>
-              <p>Sponsor a run/walk, water station, kit build, or student team.</p>
+              <p>Sponsor a run/walk, water station, supply drive, or student team.</p>
             </div>
           </div>
 
@@ -220,7 +220,7 @@ export function DonatePage() {
             >
               <option>Sponsor a run/walk</option>
               <option>Water station sponsor</option>
-              <option>Smile kit sponsor</option>
+              <option>Smile supply sponsor</option>
               <option>School ambassador sponsor</option>
             </select>
           </label>

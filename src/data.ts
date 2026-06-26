@@ -47,8 +47,8 @@ export const events: EventItem[] = [
     location: 'Mary Jo Peckham Park, Katy',
     difficulty: 'Beginner and family-friendly',
     description:
-      'A cheerful morning stride around the park supporting dental hygiene kits and wellness outreach for Katy families.',
-    participantTasks: ['Walk or run the marked route', 'Cheer on youth teams', 'Help pack post-race smile kits'],
+      'A cheerful morning stride around the park supporting dental hygiene supplies and wellness outreach for Katy families.',
+    participantTasks: ['Walk or run the marked route', 'Cheer on youth teams', 'Help prepare post-race smile supplies'],
     bring: ['Water bottle', 'Comfortable shoes', 'Sun protection'],
     volunteerRoles: ['Registration/check-in team', 'Route marshals', 'Water station support'],
     capacity: 140,
@@ -91,8 +91,8 @@ export const events: EventItem[] = [
     ctaLabel: 'Join the mile',
   },
   {
-    id: 'community-smile-kit-build',
-    name: 'Community Smile Kit Build',
+    id: 'community-smile-supply-build',
+    name: 'Community Smile Supply Build',
     eventType: 'Volunteer',
     categories: ['volunteer', 'community'],
     dateISO: '2026-09-05T10:00:00',
@@ -101,12 +101,12 @@ export const events: EventItem[] = [
     location: 'Katy Vibes Community Hall',
     difficulty: 'Great for first-time volunteers',
     description:
-      'A hands-on kit-building event that turns donated supplies into ready-to-deliver smile care bundles.',
-    participantTasks: ['Assemble supply kits', 'Write care cards', 'Stage boxes for partner pickup'],
+      'A hands-on supply-building event that turns donated items into ready-to-deliver smile care bundles.',
+    participantTasks: ['Assemble care bundles', 'Write care cards', 'Stage boxes for partner pickup'],
     bring: ['Comfortable clothes', 'Service hour log', 'Optional toothbrush donations'],
     volunteerRoles: ['Event setup crew', 'Fundraising support', 'Registration/check-in team'],
     capacity: 75,
-    ctaLabel: 'Build kits with us',
+    ctaLabel: 'Build supplies with us',
   },
   {
     id: 'student-ambassador-meetup',
@@ -149,8 +149,8 @@ export const volunteerRoles = [
 export const donationTiers: DonationTier[] = [
   { amount: 10, label: 'Supplies', impact: 'Funds toothbrushes, toothpaste, and care cards.' },
   { amount: 25, label: 'Event support', impact: 'Helps cover water, signage, and check-in materials.' },
-  { amount: 50, label: 'Community impact', impact: 'Supports smile kits and outreach for local families.' },
-  { amount: 100, label: 'Sponsor level', impact: 'Backs a youth-led stride, kit build, or school drive.' },
+  { amount: 50, label: 'Community impact', impact: 'Supports smile supplies and outreach for local families.' },
+  { amount: 100, label: 'Sponsor level', impact: 'Backs a youth-led stride, supply drive, or school event.' },
 ]
 
 export const testimonials: Testimonial[] = [
@@ -197,10 +197,10 @@ export const galleryItems: GalleryItem[] = [
     tone: 'grass',
   },
   {
-    title: 'Community kit table',
+    title: 'Community care table',
     category: 'Outreach',
-    description: 'Supply kits, care cards, and local partners turn donations into impact.',
-    metric: '500 kits goal',
+    description: 'Care supplies, encouragement cards, and local partners turn donations into impact.',
+    metric: '500 supplies goal',
     tone: 'tangerine',
   },
 ]

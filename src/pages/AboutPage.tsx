@@ -15,7 +15,6 @@ export function AboutPage() {
           </p>
         </div>
         <div className="about-smile-animation" aria-hidden="true">
-          <div className="about-orbit" />
           <div className="about-smile-face" />
           <span className="about-step step-one" />
           <span className="about-step step-two" />
